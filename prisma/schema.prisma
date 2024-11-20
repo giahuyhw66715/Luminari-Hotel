@@ -1,0 +1,98 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum ViewType {
+  GARDEN_VIEW
+  CITY_VIEW
+  BEACH_VIEW
+}
+
+enum PaymentMethod {
+  CASH
+  CARD
+}
+
+enum ServiceType {
+  DINE
+  EVENTS
+  FACILITIES
+}
+
+enum Classfication {
+  STANDARD
+  SUITE
+}
+
+model Amenity {
+  id String @id @default(cuid())
+  name String
+  icon String
+  accommodations Accommodation[]
+}
+
+model Accommodation {
+  id String @id @default(cuid())
+  title String
+  slug String @unique
+  description String
+  images String[]
+  price Int
+  amenities Amenity[]
+  bed String
+  classification Classfication @default(STANDARD)
+  view ViewType @default(GARDEN_VIEW)
+  occupancy Int @default(2)
+  roomSize Int
+  bookingItem BookingItem[]
+  @@index([id, slug])
+}
+
+model Collection {
+  id String @id @default(cuid())
+  title String
+  slug String @unique
+  description String?
+  images String[]
+  @@index([id, slug])
+}
+
+model Service {
+  id String @id @default(cuid())
+  title String
+  slug String @unique
+  description String
+  type ServiceType
+  images String[]
+  openingHours String
+  location String
+  phone String @default("(555) 123-4567")
+  email String @default("reservations@luminarihotel.com")
+  @@index([id, slug])
+}
+
+model BookingItem {
+  id String @id @default(cuid())
+  startDate DateTime
+  endDate DateTime
+  quantity Int
+  bookingId String
+  accommodationId String
+  accommodation Accommodation @relation(fields: [accommodationId], references: [id])
+  booking Booking @relation(fields: [bookingId], references: [id])
+}
+
+model Booking {
+  id String @id @default(cuid())
+  customerClerkId String
+  bookingItems BookingItem[]
+  total Int
+  method PaymentMethod @default(CASH)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
