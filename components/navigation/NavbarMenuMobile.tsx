@@ -11,9 +11,9 @@ import {
 } from "@/components/ui/drawer";
 
 import { Menu } from "lucide-react";
-import Navigation from "./common/Navigation";
-import CustomUserButton from "./CustomUserButton";
-import { navLinkList } from "./layout/Navbar";
+import Navigation from "../common/Navigation";
+import CustomUserButton from "../common/CustomUserButton";
+import { navLinkList } from "../layout/Navbar";
 import { v4 } from "uuid";
 
 const NavbarMenuMobile = () => {

@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import Heading from "./common/Heading";
-import ImagePagination from "./common/ImagePagination";
+import Heading from "./Heading";
+import ImagePagination from "./ImagePagination";
 import { IService } from "@/types";
 import ServiceInfoItem from "./ServiceInfoItem";
 import { Clock, Mail, MapPin, Phone } from "lucide-react";

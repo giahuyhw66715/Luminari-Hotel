@@ -1,7 +1,7 @@
 import React from "react";
 import Heading from "@/components/common/Heading";
 import Banner from "@/components/common/Banner";
-import BookingDetail from "@/components/BookingDetail";
+import BookingDetail from "@/components/booking/BookingDetail";
 import { IBooking } from "@/types";
 import { getBookings } from "@/lib/actions/bookingActions";
 import { currentUser } from "@clerk/nextjs/server";

@@ -1,5 +1,5 @@
 import React from "react";
-import DiscoverCarousel from "../DiscoverCarousel";
+import DiscoverCarousel from "../common/DiscoverCarousel";
 import Heading from "../common/Heading";
 import { getAccommodations } from "@/lib/actions/accommodationActions";
 import { IAccommodation } from "@/types";

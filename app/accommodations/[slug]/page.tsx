@@ -8,7 +8,7 @@ import {
 import { IAccommodation } from "@/types";
 import React from "react";
 import parse from "html-react-parser";
-import DiscoverCarousel from "@/components/DiscoverCarousel";
+import DiscoverCarousel from "@/components/common/DiscoverCarousel";
 import ImagePagination from "@/components/common/ImagePagination";
 import { notFound } from "next/navigation";
 import { Eye, Scaling, UserRound } from "lucide-react";

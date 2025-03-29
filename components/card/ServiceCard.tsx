@@ -11,7 +11,7 @@ import { IService } from "@/types";
 import ImagePagination from "../common/ImagePagination";
 import { Clock, MapPin } from "lucide-react";
 import slugify from "@/utils/slugify";
-import ServiceInfoItem from "../ServiceInfoItem";
+import ServiceInfoItem from "../common/ServiceInfoItem";
 
 const ServiceCard = ({ service }: { service: IService }) => {
     const serviceDetailUrl = `/services/${slugify(service.type)}/${

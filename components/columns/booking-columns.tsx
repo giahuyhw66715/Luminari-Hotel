@@ -6,7 +6,7 @@ import { toast } from "sonner";
 import DeleteConfirmationDialog from "../common/ConfirmationDialog";
 import { IBooking } from "@/types";
 import { deleteBooking } from "@/lib/actions/bookingActions";
-import BookingDetailDialog from "../BookingDetailDialog";
+import BookingDetailDialog from "../booking/BookingDetailDialog";
 
 export const bookingColumns: ColumnDef<IBooking>[] = [
     {

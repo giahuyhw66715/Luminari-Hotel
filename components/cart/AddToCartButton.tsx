@@ -1,8 +1,8 @@
 "use client";
 import { useCartStore } from "@/store/cart-store";
 import React from "react";
-import ArrowHoverButton from "./common/ArrowHoverButton";
 import { IAccommodation } from "@/types";
+import ArrowHoverButton from "../common/ArrowHoverButton";
 
 const AddToCartButton = ({
     accommodation,

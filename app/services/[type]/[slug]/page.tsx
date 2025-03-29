@@ -1,7 +1,7 @@
 import Banner from "@/components/common/Banner";
-import DiscoverCarousel from "@/components/DiscoverCarousel";
+import DiscoverCarousel from "@/components/common/DiscoverCarousel";
 import Heading from "@/components/common/Heading";
-import ServiceDetailInfo from "@/components/ServiceDetailInfo";
+import ServiceDetailInfo from "@/components/common/ServiceDetailInfo";
 import {
     getDiscoverServices,
     getUniqueService,

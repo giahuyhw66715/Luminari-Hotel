@@ -3,8 +3,8 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Navigation from "../common/Navigation";
-import NavbarMenuMobile from "../NavbarMenuMobile";
-import CustomUserButton from "../CustomUserButton";
+import NavbarMenuMobile from "../navigation/NavbarMenuMobile";
+import CustomUserButton from "../common/CustomUserButton";
 import { v4 } from "uuid";
 
 export const navLinkList = [

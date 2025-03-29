@@ -1,4 +1,4 @@
-import AccommodationFilter from "@/components/AccommodationFilter";
+import AccommodationFilter from "@/components/accommodation/AccommodationFilter";
 import Banner from "@/components/common/Banner";
 import AccommodationCard from "@/components/card/AccommodationCard";
 import {
@@ -8,7 +8,7 @@ import {
 import { IAccommodation } from "@/types";
 import React from "react";
 import Heading from "@/components/common/Heading";
-import AccommodationPagination from "@/components/AccommodationPagination";
+import AccommodationPagination from "@/components/accommodation/AccommodationPagination";
 
 type TSearchParams = {
     classification?: string;

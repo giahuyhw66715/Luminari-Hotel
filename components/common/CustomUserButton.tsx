@@ -2,7 +2,7 @@
 import { UserButton, useUser } from "@clerk/nextjs";
 import Link from "next/link";
 import React from "react";
-import { buttonVariants } from "./ui/button";
+import { buttonVariants } from "../ui/button";
 import { CalendarCheck, LayoutDashboard } from "lucide-react";
 
 const CustomUserButton = () => {

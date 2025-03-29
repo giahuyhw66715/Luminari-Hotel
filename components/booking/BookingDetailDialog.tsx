@@ -7,10 +7,10 @@ import {
     DialogHeader,
     DialogTitle,
     DialogTrigger,
-} from "./ui/dialog";
-import CartItem from "./CartItem";
+} from "../ui/dialog";
 import { v4 } from "uuid";
 import { ICartItem } from "@/types";
+import CartItem from "../cart/CartItem";
 
 const BookingDetailDialog = ({
     bookingItems,

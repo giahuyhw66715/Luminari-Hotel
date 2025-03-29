@@ -10,7 +10,7 @@ import {
 import Image from "next/image";
 import { IAccommodation, IService } from "@/types";
 import { useRouter } from "next/navigation";
-import Navigation from "./common/Navigation";
+import Navigation from "./Navigation";
 
 const DiscoverCarousel = ({
     items,
