@@ -13,7 +13,7 @@ import ImagePagination from "@/components/common/ImagePagination";
 import { notFound } from "next/navigation";
 import { Eye, Scaling, UserRound } from "lucide-react";
 import removeUnderScore from "@/utils/removeUnderScore";
-import AddToCartButton from "@/components/AddToCartButton";
+import AddToCartButton from "@/components/cart/AddToCartButton";
 
 const AccommodationDetailPage = async ({
     params,

@@ -4,9 +4,9 @@ import React from "react";
 import { ICartItem } from "@/types/index";
 import { useCartStore } from "@/store/cart-store";
 import { Trash2 } from "lucide-react";
-import { DateRangePicker } from "./common/DateRangePicker";
-import Counter from "./common/Counter";
 import { DateRange } from "react-day-picker";
+import { DateRangePicker } from "../common/DateRangePicker";
+import Counter from "../common/Counter";
 
 const CartItem = ({
     cartItem,

@@ -11,7 +11,7 @@ import Navigation from "../common/Navigation";
 import { IAccommodation } from "@/types";
 import removeUnderScore from "@/utils/removeUnderScore";
 import ImagePagination from "../common/ImagePagination";
-import AddToCartButton from "../AddToCartButton";
+import AddToCartButton from "../cart/AddToCartButton";
 
 const AccommodationCard = ({
     accommodation,

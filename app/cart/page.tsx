@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Banner from "@/components/common/Banner";
-import CartItem from "@/components/CartItem";
 import Heading from "@/components/common/Heading";
 import { useCartStore } from "@/store/cart-store";
 import { useUser } from "@clerk/nextjs";
@@ -10,6 +9,7 @@ import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { EPaymentMethod } from "@/types";
 import { createBooking } from "@/lib/actions/bookingActions";
+import CartItem from "@/components/cart/CartItem";
 
 const CartPage = () => {
     const { cart, total } = useCartStore();
